@@ -32,10 +32,14 @@ toTopBtn.addEventListener("click", function () {
 ///////// slider ////////////////////////////////
 let slider = document.querySelector(".slider");
 let sliderBullets = document.querySelectorAll("ul.bullets li");
-let sliderImgs = [];
-for (let i = 0; i < 3; i++) {
-  sliderImgs.push(`/images/slider/slider0${i}.jpg`);
-}
+let sliderImgs = [
+  "/images/slider/slider00.jpg",
+  "/images/slider/slider01.jpg",
+  "/images/slider/slider02.jpg",
+];
+// for (let i = 0; i < 3; i++) {
+//   sliderImgs.push(`/images/slider/slider0${i}.jpg`);
+// }
 let sliderIndex = 1;
 function changeSliderImg() {
   sliderBullets.forEach(function (ele) {
@@ -54,7 +58,7 @@ function startInterval() {
   return setInterval(() => {
     changeSliderImg();
     NextsliderIndex();
-  }, 4000);
+  }, 7000);
 }
 
 let sliderInterval = startInterval();
