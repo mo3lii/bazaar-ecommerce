@@ -34,13 +34,13 @@ let slider = document.querySelector(".slider");
 let sliderBullets = document.querySelectorAll("ul.bullets li");
 let sliderImage = document.querySelector(".slider img");
 let sliderImgs = [
-  // "https://github.com/mo3lii/bazaar-ecommerce/blob/150f29d00bf9c6f49d4046d3f0a0702f7f326e23/images/slider/slider00.jpg",
-  // "images/slider/slider01.jpg",
-  // "images/slider/slider02.jpg",
+  "../images/slider00.jpg",
+  "../images/slider01.jpg",
+  "../images/slider02.jpg",
 ];
-for (let i = 0; i < 3; i++) {
-  sliderImgs.push(`../images/slider0${i}.jpg`);
-}
+// for (let i = 0; i < 3; i++) {
+//   sliderImgs.push(`../images/slider0${i}.jpg`);
+// }
 
 let sliderIndex = 1;
 function changeSliderImg() {
