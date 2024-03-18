@@ -33,9 +33,9 @@ toTopBtn.addEventListener("click", function () {
 let slider = document.querySelector(".slider");
 let sliderBullets = document.querySelectorAll("ul.bullets li");
 let sliderImgs = [
-  "https://github.com/mo3lii/bazaar-ecommerce/blob/main/images/slider/slider00.jpg",
-  "https://github.com/mo3lii/bazaar-ecommerce/blob/main/images/slider/slider01.jpg",
-  "https://github.com/mo3lii/bazaar-ecommerce/blob/main/images/slider/slider02.jpg",
+  "https://github.com/mo3lii/my-cloud/blob/main/slider00.jpg",
+  "https://github.com/mo3lii/my-cloud/blob/main/slider01.jpg",
+  "https://github.com/mo3lii/my-cloud/blob/main/slider02.jpg",
 ];
 // for (let i = 0; i < 3; i++) {
 //   sliderImgs.push(`/images/slider/slider0${i}.jpg`);
