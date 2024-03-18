@@ -39,7 +39,7 @@ let sliderImgs = [
   // "images/slider/slider02.jpg",
 ];
 for (let i = 0; i < 3; i++) {
-  sliderImgs.push(`/images/slider0${i}.jpg`);
+  sliderImgs.push(`../images/slider0${i}.jpg`);
 }
 
 let sliderIndex = 1;
