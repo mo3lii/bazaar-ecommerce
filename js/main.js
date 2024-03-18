@@ -34,8 +34,8 @@ let slider = document.querySelector(".slider");
 let sliderBullets = document.querySelectorAll("ul.bullets li");
 let sliderImage = document.querySelector(".slider img");
 let sliderImgs = [
-  "../images/slider00.jpg",
-  "../images/slider01.jpg",
+  "images/slider00.jpg",
+  "/images/slider01.jpg",
   "../images/slider02.jpg",
 ];
 // for (let i = 0; i < 3; i++) {
