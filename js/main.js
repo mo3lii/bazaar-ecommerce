@@ -30,55 +30,55 @@ toTopBtn.addEventListener("click", function () {
 });
 
 ///////// slider ////////////////////////////////
-let slider = document.querySelector(".slider");
-let sliderBullets = document.querySelectorAll("ul.bullets li");
-let sliderImage = document.querySelector(".slider img");
-let sliderImgs = [
-  "images/slider00.jpg",
-  "/images/slider01.jpg",
-  "../images/slider02.jpg",
-];
-// for (let i = 0; i < 3; i++) {
-//   sliderImgs.push(`../images/slider0${i}.jpg`);
+// let slider = document.querySelector(".slider");
+// let sliderBullets = document.querySelectorAll("ul.bullets li");
+// let sliderImage = document.querySelector(".slider img");
+// let sliderImgs = [
+//   "images/slider00.jpg",
+//   "/images/slider01.jpg",
+//   "../images/slider02.jpg",
+// ];
+// // for (let i = 0; i < 3; i++) {
+// //   sliderImgs.push(`../images/slider0${i}.jpg`);
+// // }
+
+// let sliderIndex = 1;
+// function changeSliderImg() {
+//   sliderBullets.forEach(function (ele) {
+//     ele.classList.remove("active-bullet");
+//   });
+//   sliderBullets[sliderIndex].classList.add("active-bullet");
+//   sliderImage.src = `${sliderImgs[sliderIndex]}`;
+// }
+// function NextsliderIndex() {
+//   sliderIndex = (sliderIndex + 1) % sliderImgs.length;
+// }
+// function PrevsliderIndex() {
+//   sliderIndex = --sliderIndex < 0 ? sliderImgs.length - 1 : sliderIndex;
+// }
+// function startInterval() {
+//   return setInterval(() => {
+//     changeSliderImg();
+//     NextsliderIndex();
+//   }, 4000);
 // }
 
-let sliderIndex = 1;
-function changeSliderImg() {
-  sliderBullets.forEach(function (ele) {
-    ele.classList.remove("active-bullet");
-  });
-  sliderBullets[sliderIndex].classList.add("active-bullet");
-  sliderImage.src = `${sliderImgs[sliderIndex]}`;
-}
-function NextsliderIndex() {
-  sliderIndex = (sliderIndex + 1) % sliderImgs.length;
-}
-function PrevsliderIndex() {
-  sliderIndex = --sliderIndex < 0 ? sliderImgs.length - 1 : sliderIndex;
-}
-function startInterval() {
-  return setInterval(() => {
-    changeSliderImg();
-    NextsliderIndex();
-  }, 4000);
-}
+// let sliderInterval = startInterval();
 
-let sliderInterval = startInterval();
-
-let controls = document.querySelector(".controls");
-controls.addEventListener("click", function (e) {
-  if (e.target.id == "slider-left") {
-    clearInterval(sliderInterval);
-    sliderInterval = startInterval();
-    PrevsliderIndex();
-    changeSliderImg();
-  } else if (e.target.id == "slider-right") {
-    clearInterval(sliderInterval);
-    sliderInterval = startInterval();
-    NextsliderIndex();
-    changeSliderImg();
-  }
-});
+// let controls = document.querySelector(".controls");
+// controls.addEventListener("click", function (e) {
+//   if (e.target.id == "slider-left") {
+//     clearInterval(sliderInterval);
+//     sliderInterval = startInterval();
+//     PrevsliderIndex();
+//     changeSliderImg();
+//   } else if (e.target.id == "slider-right") {
+//     clearInterval(sliderInterval);
+//     sliderInterval = startInterval();
+//     NextsliderIndex();
+//     changeSliderImg();
+//   }
+// });
 let productsBox = document.querySelector(".products");
 
 /////////////////////////////////////////////////
